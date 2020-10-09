@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Relative Layout</string>
+    <string-array name="Equation">
+        <item>+</item>
+        <item>-</item>
+        <item>*</item>
+        <item>/</item>
+    </string-array>
+</resources>

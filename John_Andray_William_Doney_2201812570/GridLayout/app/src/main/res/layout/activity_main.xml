@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="32dp"
+    android:paddingTop="16dp"
+    android:paddingRight="32dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="A Simple Calculator"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="32dp"/>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:columnCount="3">
+
+        <EditText
+            android:id="@+id/number1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:hint="number 1"
+            android:inputType="number"
+            android:layout_gravity="fill"/>
+
+        <Spinner
+            android:id="@+id/equation"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:entries="@array/Equation"
+            android:layout_gravity="center"/>
+
+        <EditText
+            android:id="@+id/number2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:hint="number 2"
+            android:inputType="number"
+            android:layout_gravity="fill"/>
+
+    </GridLayout>
+
+    <Button
+        android:id="@+id/accept"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Calculate"
+        android:onClick="Next"
+        android:layout_gravity="end"/>
+
+</GridLayout>
